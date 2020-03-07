@@ -37,6 +37,5 @@ If you are not available for this, simply spreading the word for us would help t
 1. 使用github action 构建
 2. 移除fundebug.js
 
-
 ## License
 [GPL-2.0](https://github.com/xCss/Valine/blob/master/LICENSE)
