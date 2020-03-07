@@ -34,7 +34,7 @@ If you are enjoying this app, please consider making a donation to keep it alive
 If you are not available for this, simply spreading the word for us would help too!
 
 ## Modify
-1. 移除fundebug.
+1. 移除fundebug.js
 
 ## License
 [GPL-2.0](https://github.com/xCss/Valine/blob/master/LICENSE)
