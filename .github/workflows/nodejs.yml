@@ -25,3 +25,5 @@ jobs:
     - run: npm test
       env:
         NODE_ENV: production
+    - name: show ls
+    - run: ls -a dist/
