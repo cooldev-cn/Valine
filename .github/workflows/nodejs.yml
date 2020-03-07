@@ -19,10 +19,21 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12
-#     - run: npm ci
     - run: npm install
-#     - run: npm run build
     - run: npm test
-      env:
-        NODE_ENV: production
+#      env:
+#        NODE_ENV: production
     - run: ls -a dist/
+
+    - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "GitHub Action Build" -a
+    - name: Push dist
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+        branch: master
+        force: true
+        directory: './dist'
