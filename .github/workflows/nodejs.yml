@@ -29,7 +29,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "GitHub Action Build" -a
+        git commit -m ":package: GitHub Action Build" -a
     - name: Push dist
       uses: ad-m/github-push-action@master
       with:
