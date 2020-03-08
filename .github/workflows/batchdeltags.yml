@@ -8,10 +8,10 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  del:
 
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: DEL
-      run: git show-ref --tag | grep "v1.0.2"
+      run: git ls-remote --tags
