@@ -8,10 +8,9 @@ on:
     branches: [ master ]
 
 jobs:
-  del:
+  cleanTagsAndRelease:
 
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: DEL
-      run: git ls-remote --tags
+    - run: git ls-remote --tags | awk '{print $2}'
