@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: 清理全部远程tags
-      run: git ls-remote --tags | awk ':{print $2}'
+      run: git ls-remote --tags | awk '{print :$2}'
