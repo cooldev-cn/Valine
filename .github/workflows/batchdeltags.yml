@@ -13,4 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: git ls-remote --tags | awk '{print $2}'
+    - name: 清理全部远程tags
+      run: git ls-remote --tags | awk ':{print $2}'
